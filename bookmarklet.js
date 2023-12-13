@@ -1,8 +1,8 @@
-var currentversion = "b-3";
+var currentversion = "0.0.1/0";
 
-// Checks if page isn't already 'https://google.com/Booklix/'
-if (location.host !== "google.com" || !location.pathname.startsWith("/Bookmarklets")) {
-    location.href = "https://google.com/Bookmarklets";
+// Checks if page isn't already 'https://google.com/MythsBookmarklets/'
+if (location.host !== "google.com" || !location.pathname.startsWith("/MythsBookmarklets")) {
+    location.href = "https://google.com/MythsBookmarklets";
     alert("Re-run this bookmarklet")
 }
 
@@ -41,10 +41,3 @@ inspect.id = 'inspect';
 inspect.innerHTML = '<h3>Inspect Element</h3>';
 inspect.style = 'font-size: 35px; text-align: center';
 document.body.appendChild(inspect);
-
-// Goofy
-let goofy = document.createElement('p');
-goofy.id = 'goofy';
-goofy.innerHTML = '<p>Mr. Raychouni is a very bussin teacher';
-goofy.style = 'text-align: center; font-size: 3px; margin-top: 575px;';
-document.body.appendChild(goofy);
